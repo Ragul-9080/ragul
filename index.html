@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ragul-Portfolio</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Responsive Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
@@ -17,7 +17,7 @@
     <header class="header">
       <nav class="nav bd_grid">
         <div>
-          <a href="#" class="nav_logo">Rachlix Academy</a>
+          <a href="#" class="nav_logo">Reachout Academy</a>
         </div>
         <div class="nav_menu" id="nav_menu">
           <ul class="nav_list">
@@ -686,29 +686,29 @@
           data-aos-delay="250"
         >
           <div class="work_img">
-            <img src="./img/ragul1.jpg" alt="" />
+            <img src="./assets/img/ragul1.jpg" alt="" />
           </div>
 
           <div class="work_img">
-            <img src="./img/ragul2.jpg" alt="" />
+            <img src="./assets/img/ragul2.jpg" alt="" />
           </div>
 
     
 
           <div class="work_img">
-            <img src="./img/ragul3.jpg" alt="" />
+            <img src="./assets/img/ragul3.jpg" alt="" />
           </div>
 
           <div class="work_img">
-            <img src="./img/ragul4.jpg" alt="" />
+            <img src="./assets/img/ragul4.jpg" alt="" />
           </div>
 
           <div class="work_img">
-            <img src="./img/ragul5.jpg" alt="" />
+            <img src="./assets/img/ragul5.jpg" alt="" />
           </div>
 
           <div class="work_img">
-            <img src="./img/ragul6.jpg" alt="" />
+            <img src="./assets/img/ragul6.jpg" alt="" />
           </div>
 
         </div>
@@ -720,10 +720,11 @@
         <h2 class="section-title" data-aos="fade-down">Contact</h2>
 
         <div class="contact_container bd_grid">
-          <form action="#" class="contact_form">
+          <form action="#" class="contact_form" id="submit-to-google-sheet">
             <input
               type="text"
               placeholder="Name"
+              name="name"
               class="control_input"
               data-aos="fade-right"
               data-aos-delay="250"
@@ -731,12 +732,13 @@
             <input
               type="mail"
               placeholder="Email"
+              name="email"
               class="control_input"
               data-aos="fade-right"
               data-aos-delay="300"
             />
             <textarea
-              name=""
+              name="about"
               id=""
               cols="0"
               rows="10"
@@ -746,7 +748,7 @@
             ></textarea>
 
             <input
-              type="button"
+              type="submit"
               value="Send"
               class="control_button button"
               data-aos="fade-right"
@@ -798,8 +800,9 @@
     </main>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./js/main.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script>
       AOS.init({
         duration: 1200,
